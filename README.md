@@ -1,5 +1,7 @@
 # Helper Methods
 
+The starting point of this project is where we left the ad2-getting-started project at the end of class on Day 1.
+
 ## Setup
 
 ```
