@@ -4,9 +4,17 @@
 
 ## Write some tests
 
+We're going to be learning a _lot_ of ways to improve our code, while holding functionality constant.
+
+That means we're going to need to do a lot of testing to make sure we didn't break things. Once you get tired of manually clicking through every link, form, etc, consider writing some automated tests to save yourself the trouble.
+
 Read Sections 1, 2, 4, 5, 6, and 7 of the [Rails Guide on Testing](https://guides.rubyonrails.org/testing.html). These are the kinds of tests that we write most frequently.
 
-In this project, we have one fully functional web resource, `movies`. Create a test file, `test/system/movie_test.rb`, and take a stab at writing some System tests in it to lock down the current functionality of the application.
+In this project, we have one fully functional web resource, `movies`. Create a test file, `test/system/movie_test.rb`, and take a stab at writing some System tests in it to lock down the current functionality of the application. For example, try adding a test that checks to make sure the URL `/movies/new` has a `<form>` element on it. Run your tests with:
+
+```
+rails test test/system/movie_test.rb
+```
 
 After you’ve spent 20-30 minutes on it, you’re allowed to look at the example specs in `test/system/example_specs.rb`. You can copy-paste some or all of them into your own test file and run then periodically as you’re doing the rest of the project to ensure you didn’t break anything as we refactor.
 
