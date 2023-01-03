@@ -10,7 +10,7 @@ bin/setup
 
 We're going to be learning a _lot_ of ways to improve our code, while holding functionality constant.
 
-That means we're going to need to do a lot of testing to make sure we didn't break things. Once you get tired of manually clicking through every link, form, etc, consider writing some automated tests to save yourself the trouble.
+That means we're going to need to do a lot of testing to make sure we didn't break functionality as we evolve our code. Once you get tired of manually clicking through every link, form, etc, consider writing some automated tests to save yourself the trouble.
 
 Read Sections 1, 2, 4, 5, 6, and 7 of the [Rails Guide on Testing](https://guides.rubyonrails.org/testing.html). These are the kinds of tests that we write most frequently.
 
