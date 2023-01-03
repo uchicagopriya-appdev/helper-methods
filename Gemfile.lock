@@ -113,6 +113,10 @@ GEM
     debug_inspector (1.1.0)
     diff-lcs (1.5.0)
     diffy (3.4.2)
+    dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     e2mmap (0.1.0)
     erubi (1.11.0)
     ffi (1.15.5)
@@ -348,6 +352,7 @@ DEPENDENCIES
   bullet
   byebug
   capybara (>= 3.26)
+  dotenv-rails
   htmlbeautifier
   jbuilder (~> 2.7)
   listen (~> 3.3)
