@@ -1,8 +1,9 @@
-image: jelaniwoods/appdev2022-helper-methods-tmp
+image: jelaniwoods/appdev2023-helper-methods
 
 tasks:
-  - command: bundle install
-  - init: bin/setup
+  - before: |
+      bin/setup
+      .vscode/manage_extensions
 ports:
   - port: 3000
     onOpen: open-preview
