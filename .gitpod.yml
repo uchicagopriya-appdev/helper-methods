@@ -1,4 +1,4 @@
-image: jelaniwoods/appdev2022-helper-methods-tmp
+image: jelaniwoods/appdev2023-helper-methods
 
 tasks:
   - command: bundle install
