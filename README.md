@@ -1,6 +1,10 @@
 # Helper Methods
 
-## Tasks
+## Setup
+
+```
+bin/setup
+```
 
 ## Write some tests
 
