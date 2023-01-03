@@ -2,14 +2,14 @@ require "application_system_test_case"
 
 class MoviesTest < ApplicationSystemTestCase
   test "visiting the index" do
-    visit movies_url
+    visit "/movies"
     assert_selector "h1", text: "List of all movies"
   end
 
   test "creating a Movie" do
     original_movie_count = Movie.count
 
-    visit movies_url
+    visit "/movies"
     click_on "Add a new movie"
 
     fill_in "Description", with: "A new movie's descroption"
@@ -43,7 +43,7 @@ class MoviesTest < ApplicationSystemTestCase
     @movie = movies(:one)
     original_movie_count = Movie.count
 
-    visit movies_url
+    visit "/movies"
     click_on "Show details", match: :first
     click_on "Delete movie"
 
