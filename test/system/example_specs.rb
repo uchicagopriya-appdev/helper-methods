@@ -14,7 +14,7 @@ class MoviesTest < ApplicationSystemTestCase
 
     fill_in "Description", with: "A new movie's descroption"
     fill_in "Title", with: "A new movie's title"
-    click_on "Create movie"
+    click_on "Create Movie"
 
     assert_text "Movie created successfully"
     
@@ -30,7 +30,7 @@ class MoviesTest < ApplicationSystemTestCase
     fill_in "Description", with: "Some other description"
     fill_in "Title", with: "Some other title"
 
-    click_on "Update movie"
+    click_on "Update Movie"
     
     assert_text "Movie updated successfully"
 
