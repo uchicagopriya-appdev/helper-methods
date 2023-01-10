@@ -1,7 +1,6 @@
 class MoviesController < ApplicationController
   def new
     @the_movie = Movie.new
-    render template: "movies/new.html.erb"
   end
 
 
@@ -14,7 +13,6 @@ class MoviesController < ApplicationController
       end
 
       format.html do
-        render(template: "movies/index.html.erb")
       end
     end
   end
@@ -24,7 +22,6 @@ class MoviesController < ApplicationController
     the_id = params.fetch(:id)
     matching_movies = Movie.where(id: the_id)
     @the_movie = matching_movies.first
-    render(template: "movies/show.html.erb")
   end
 
 
@@ -45,7 +42,6 @@ class MoviesController < ApplicationController
     the_id = params.fetch(:id)
     matching_movies = Movie.where(id: the_id)
     @the_movie = matching_movies.first
-    render(template: "movies/edit.html.erb")
   end
 
 
